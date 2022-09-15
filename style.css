@@ -1,0 +1,53 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.block,
+.block__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: auto;
+}
+
+.block {
+  padding: 0.5rem;
+  border: 0.1rem solid rgb(19, 11, 11);
+
+}
+
+.block__text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.block__result {
+  max-width: 20rem;
+  min-height: 8rem;
+  border: 0.1rem solid rgb(19, 11, 11);
+  padding: 0.3rem;
+  overflow: auto;
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form__btn {
+  cursor: pointer;
+  padding: 0.2rem 0.8rem;
+  font-size: 1rem;
+}
+
+.form__input {
+  width: 3rem;
+}
