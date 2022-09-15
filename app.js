@@ -183,7 +183,6 @@ class App extends BaseComponent {
       e.preventDefault();
       const arrValue = this.getValue(this.cub.inputs);
       const cub = getCubParameters(...arrValue);
-      console.log(arrValue)
       if (!arrValue.every(item => +item >= 0)) {
         this.cub.result.node.innerHTML = 'Значение должно быть больше 0';
       } else {
